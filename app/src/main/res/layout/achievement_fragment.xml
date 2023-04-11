@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:scrollbarStyle="outsideOverlay"
-    android:background="@drawable/bg_button"
+    android:background="@drawable/transparent_black_ten_percent"
     tools:context=".fragment.AchievementFragment">
 
     <TextView
@@ -92,7 +92,7 @@
                 <TextView
                     android:id="@+id/settotalDonate"
                     android:gravity="center"
-                    android:backgroundTint="@color/primary_dark"
+                    android:backgroundTint="@color/teal_700"
                     android:background="@drawable/circle"
                     android:text="1 times"
                     android:layout_width="wrap_content"
@@ -118,7 +118,7 @@
                 <TextView
                     android:id="@+id/setLastDonate"
                     android:gravity="center"
-                    android:backgroundTint="@color/primary_dark"
+                    android:backgroundTint="@color/teal_700"
                     android:background="@drawable/circle"
                     android:text="12/12/2018"
                     android:layout_width="wrap_content"
