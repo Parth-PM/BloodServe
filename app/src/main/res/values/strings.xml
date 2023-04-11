@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Blood Serve</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="register">Create an account</string>
+    <string name="forgotpass">Forgot password?</string>
+    <string name="displayName">Full Name</string>
+    <string name="mobile">Mobile No</string>
+    <string name="userAddress">Address</string>
+    <string name="prompt_confirm_password">Confirm password</string>
+    <string name="signup">Register</string>
+    <string name="BloodGroup">Blood Group</string>
+    <string name="Division">Choose Division</string>
+    <string name="Post">Post</string>
+    <string name="reset">Reset</string>
+
+
+    <string-array name="division_list">
+        <item>Scarborough</item>
+        <item>Brampton</item>
+        <item>Toronto</item>
+        <item>Whitby</item>
+        <item>Oshawa</item>
+        <item>Ajax</item>
+        <item>Pickering</item>
+        <item>Missisauga</item>
+
+    </string-array>
+
+    <array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </array>
+
+    <array name="Blood_Group">
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+    </array>
+
+</resources>
