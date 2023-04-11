@@ -118,6 +118,7 @@ public class AchievementFragment extends Fragment {
 
                                         int cnt = 0;
                                         int tot = 0;
+                                        Log.e("parth", ""+lastDate);
                                         for (int i = 0; i < lastDate.length(); i++) {
                                             if (cnt == 0 && lastDate.charAt(i) == '/') {
                                                 day = tot;
@@ -129,7 +130,11 @@ public class AchievementFragment extends Fragment {
                                                 month = tot;
                                                 tot=0;
 
-                                            } else tot = tot * 10 + (lastDate.charAt(i) - '0');
+                                            } else {
+                                                tot = tot * 10 + (lastDate.charAt(i) - '0');
+                                                Log.e("parth total", ""+tot);
+
+                                            }
                                         }
                                         year = tot;
                                         mycalendar = Calendar.getInstance(TimeZone.getDefault());
@@ -150,7 +155,7 @@ public class AchievementFragment extends Fragment {
                                         }
                                         totalday += ((currentMonth - month)*30);
 
-                                        totalday += ((currentMonth - year)*365);
+                                        totalday += ((currentYear - year)*365);
 
                                         try
                                         {
