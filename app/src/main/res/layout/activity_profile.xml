@@ -40,7 +40,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/displayName"
                 android:inputType="text"
-                android:textColor="@android:color/white" />
+                android:textColor="@color/black" />
         </LinearLayout>
         <LinearLayout
             android:padding="3dp"
@@ -100,7 +100,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/mobile"
                 android:inputType="text"
-                android:textColor="@android:color/white" />
+                android:textColor="@android:color/black" />
         </LinearLayout>
 
         <LinearLayout
@@ -119,7 +119,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/userAddress"
                 android:inputType="text"
-                android:textColor="@android:color/white" />
+                android:textColor="@android:color/black" />
         </LinearLayout>
 
         <LinearLayout
@@ -149,7 +149,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/prompt_email"
             android:inputType="textEmailAddress"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/black" />
 
         <EditText
             android:id="@+id/input_password"
@@ -157,7 +157,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/prompt_password"
             android:inputType="textPassword"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/black" />
 
         <EditText
             android:id="@+id/input_password_confirm"

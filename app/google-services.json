@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "878617511728",
+    "project_id": "bloodserve-bf483",
+    "storage_bucket": "bloodserve-bf483.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:878617511728:android:31e67bf8dc333064502af5",
+        "android_client_info": {
+          "package_name": "com.pm.bloodserve"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "878617511728-rfrk1mu7glgsv047gokb2cvat42i7val.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQ-8vHq094nou9AoYrkir_EF5RCT1YJkk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "878617511728-rfrk1mu7glgsv047gokb2cvat42i7val.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
