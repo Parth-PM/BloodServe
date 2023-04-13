@@ -12,7 +12,7 @@
         <ImageView
             android:layout_gravity="center"
             android:padding="5dp"
-            android:src="@drawable/ic_transfuse_blood"
+            android:src="@drawable/ic_icon"
             android:layout_width="70dp"
             android:layout_height="70dp" />
 

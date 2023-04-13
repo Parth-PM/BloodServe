@@ -6,6 +6,7 @@
     android:orientation="vertical"
     tools:context=".fragment.SearchHospitalActivity"
     android:layout_height="match_parent">
+
     <fragment
         android:id="@+id/gMap"
         class="com.google.android.gms.maps.SupportMapFragment"
