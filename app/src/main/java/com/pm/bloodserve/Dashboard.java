@@ -96,7 +96,7 @@ public class Dashboard extends AppCompatActivity
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 //pd.show();
-                if(dataSnapshot.getValue(UserModel.class)!=null) {
+                if(dataSnapshot.exists()) {
                     String name = dataSnapshot.getValue(UserModel.class).getName();
 
                     getUserName.setText(name);

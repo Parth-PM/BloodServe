@@ -1,7 +1,11 @@
 package com.pm.bloodserve.fragment;
 
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.service.autofill.UserData;
 import android.util.Log;
@@ -15,6 +19,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.app.NotificationCompat;
 import androidx.fragment.app.Fragment;
 
 import com.pm.bloodserve.R;
@@ -181,6 +186,24 @@ public class AchievementFragment extends Fragment {
                                                                 .child(bloodGroup[getbloodgroup])
                                                                 .child(firebaseAuth.getCurrentUser().getUid())
                                                                 .child("TotalDonate").setValue(donorModel.getTotalDonate()+1);
+
+                                                        NotificationManager notificationManager = (NotificationManager) getActivity().getSystemService(Context.NOTIFICATION_SERVICE);
+
+                                                        // Create a notification channel (required for Android 8.0 or higher)
+                                                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                                                            NotificationChannel channel = new NotificationChannel("donation_channel", "Donation Channel", NotificationManager.IMPORTANCE_DEFAULT);
+                                                            notificationManager.createNotificationChannel(channel);
+                                                        }
+
+                                                        // Create a notification builder object
+                                                        NotificationCompat.Builder builder = new NotificationCompat.Builder(getActivity(), "donation_channel")
+                                                                .setSmallIcon(R.drawable.notification_icon)
+                                                                .setContentTitle("Blood Donation")
+                                                                .setContentText("Thank you for donating blood!")
+                                                                .setPriority(NotificationCompat.PRIORITY_DEFAULT);
+
+                                                        // Show the notification
+                                                        notificationManager.notify(1, builder.build());
                                                         startActivity(new Intent(getActivity(), Dashboard.class));
                                                     }
                                                 });
