@@ -159,7 +159,7 @@ public class ProfileActivity extends AppCompatActivity {
                     if (Name.length() <= 2) {
                         ShowError("Name");
                         fullName.requestFocusFromTouch();
-                    } else if (Contact.length() < 11) {
+                    } else if (Contact.length() < 10) {
                         ShowError("Contact Number");
                         contact.requestFocusFromTouch();
                     } else if (Address.length() <= 2) {
@@ -200,7 +200,7 @@ public class ProfileActivity extends AppCompatActivity {
                                                     if(isDonor.isChecked())
                                                     {
                                                         donor_ref.child(div).child(blood).child(id).child("UID").setValue(id).toString();
-                                                        donor_ref.child(div).child(blood).child(id).child("LastDonate").setValue("Don't donate yet!");
+                                                        donor_ref.child(div).child(blood).child(id).child("LastDonate").setValue("Did not donate yet!");
                                                         donor_ref.child(div).child(blood).child(id).child("TotalDonate").setValue(0);
                                                         donor_ref.child(div).child(blood).child(id).child("Name").setValue(Name);
                                                         donor_ref.child(div).child(blood).child(id).child("Contact").setValue(Contact);
@@ -235,7 +235,7 @@ public class ProfileActivity extends AppCompatActivity {
                             if(isDonor.isChecked())
                             {
                                 donor_ref.child(div).child(blood).child(id).child("UID").setValue(id).toString();
-                                donor_ref.child(div).child(blood).child(id).child("LastDonate").setValue("Don't donate yet!");
+                                donor_ref.child(div).child(blood).child(id).child("LastDonate").setValue("Did not donate yet!");
                                 donor_ref.child(div).child(blood).child(id).child("TotalDonate").setValue(0);
                                 donor_ref.child(div).child(blood).child(id).child("Name").setValue(Name);
                                 donor_ref.child(div).child(blood).child(id).child("Contact").setValue(Contact);
