@@ -14,8 +14,7 @@
         android:gravity="center"
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/ic_cover_logo">
+        android:layout_height="match_parent">
 
         <ImageView
             android:layout_marginTop="20dp"
@@ -24,7 +23,7 @@
             android:layout_height="80dp"
             android:background="@drawable/circle"
             android:contentDescription="@string/nav_header_desc"
-            android:src="@mipmap/blood_bank_ic_launcher_foreground" />
+            android:src="@drawable/logo" />
 
         <TextView
             android:layout_marginTop="10dp"

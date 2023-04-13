@@ -2,26 +2,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/transparent_black_ten_percent"
     android:clipToPadding="false"
     android:fillViewport="true"
     android:scrollbarStyle="outsideOverlay"
-    android:background="@color/transparent_black_ten_percent"
-    tools:context="ProfileActivity">
+    tools:context=".RegisterActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="20dp"
         android:layout_gravity="center_horizontal"
         android:orientation="vertical">
 
         <ImageView
             android:layout_gravity="center_horizontal"
             android:id="@+id/image_logo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_marginTop="?attr/actionBarSize"
-            android:background="@drawable/circle"
-            android:src="@mipmap/blood_bank_icon_round" />
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/logo" />
 
 
         <LinearLayout
@@ -31,6 +32,8 @@
             android:layout_height="wrap_content">
             <TextView
                 android:text="Name:"
+                android:textStyle="bold"
+                android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <EditText
@@ -40,8 +43,9 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/displayName"
                 android:inputType="text"
-                android:textColor="@color/black" />
+                android:textColor="@android:color/white" />
         </LinearLayout>
+
         <LinearLayout
             android:padding="3dp"
             android:layout_width="match_parent"
@@ -51,27 +55,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sex:" />
-
-            <Spinner
-                android:layout_marginLeft="67dp"
-                android:id="@+id/gender"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:entries="@array/gender">
-
-            </Spinner>
-        </LinearLayout>
-        <LinearLayout
-            android:padding="3dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
                 android:text="Blood Group:" />
 
             <Spinner
@@ -84,23 +69,30 @@
 
             </Spinner>
         </LinearLayout>
+
         <LinearLayout
             android:padding="3dp"
-            android:orientation="horizontal"
+            android:layout_marginTop="7dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Contact No:" />
-            <EditText
-                android:layout_marginLeft="20dp"
-                android:id="@+id/inputMobile"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Sex:" />
+
+            <Spinner
+                android:layout_marginLeft="67dp"
+                android:id="@+id/gender"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/mobile"
-                android:inputType="text"
-                android:textColor="@android:color/black" />
+                android:layout_weight="1"
+                android:entries="@array/gender">
+
+            </Spinner>
         </LinearLayout>
 
         <LinearLayout
@@ -111,6 +103,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
                 android:text="Address:" />
             <EditText
                 android:layout_marginLeft="40dp"
@@ -119,7 +113,28 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/userAddress"
                 android:inputType="text"
-                android:textColor="@android:color/black" />
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="3dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Contact No:" />
+            <EditText
+                android:layout_marginLeft="20dp"
+                android:id="@+id/inputMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mobile"
+                android:inputType="text"
+                android:textColor="@android:color/white" />
         </LinearLayout>
 
         <LinearLayout
@@ -131,6 +146,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
                 android:text="Division:" />
 
             <Spinner
@@ -149,7 +167,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/prompt_email"
             android:inputType="textEmailAddress"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/white" />
 
         <EditText
             android:id="@+id/input_password"
@@ -157,7 +175,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/prompt_password"
             android:inputType="textPassword"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/white" />
 
         <EditText
             android:id="@+id/input_password_confirm"
@@ -180,7 +198,8 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/signin_btn"
             android:text="@string/signup"
-            android:textAllCaps="false" />
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
 
     </LinearLayout>
 
